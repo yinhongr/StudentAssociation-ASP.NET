@@ -1,0 +1,449 @@
+﻿.masterTable
+{
+    width:1024px;
+    height:768px;
+    padding:0px 0px 0px 0px;
+    border-spacing:0px 0px;
+    margin:0px 0px 0px 0px;
+}
+.border
+{
+    height:13px;
+    background-color:#FFC125;
+}
+.banner
+{
+    background-color:#FFE7BA;
+    width:35%;
+    height:95px;
+    font-family:"Lucida Sans", Sans-Serif;
+    font-size:40px;
+    font-style:italic;
+    color:black;
+    text-align:center;
+    border-spacing:0px 0px;
+}
+.pageLeft
+{
+    height:595px;
+    background-color:#FFC125;
+}
+.pageContent
+{   
+    width:80%;
+    height:595px;
+    background-color:#FFE7BA;
+}
+.footer
+{
+    font-size: 15px;
+	color: black;
+	background-color:#FFC125;
+	height:24px;
+    text-align:center;
+}
+.image1, .image2, #image4, #image5
+{
+    height:95px;
+}
+.image1
+{
+    position:relative;
+    left:55%;
+    top:5%;
+}
+.image2
+{
+    position:relative;
+    left:7%;
+    top:5%;
+}
+.image3
+{
+    height:120px;
+    position:relative;
+    left:22%;
+    bottom:50px;
+}
+#image4
+{
+    position:relative;
+    left:38%;
+    top:3%;
+}
+#image5
+{
+    position:relative;
+    right:38%;
+    top:3%;
+}
+.menu1
+{
+    position:relative;
+    left:5%;
+    bottom:115px;
+}
+#calendar 
+{
+    position:relative;
+    left:5%;
+}
+#calendar a
+{
+    text-decoration:none;
+}
+.banner1
+{
+    width:22%;
+    background-color:#FFE7BA;
+    height:95px;
+    border-spacing:0px 0px;
+}
+.MenuStaItm
+{
+  background-color: #FFE7BA;
+  font-size: 14px;
+  padding-left: 2px;
+  padding-top: 2px;
+  padding-right: 20px;
+  border: 2px solid;
+  text-align:left;
+}
+
+
+.MenuDynItm
+{
+  background-color: #FFF8DC;
+  font-size: 14px;
+  padding: 2px;
+  border: 1px solid;
+}
+.TreeView1
+{
+    font-family:"Lucida Sans", Sans-Serif;
+    font-size:24px;
+    position:relative;
+    left:5%;
+    bottom:150px;
+}
+.breadcrumbs1
+{
+    font-family:Calibri;
+    font-size:16px;
+    background-color:#FFE7BA;
+    padding-left:5px;
+    border-spacing:0px 0px;
+}
+#homePageTitle, #homePageText
+{
+    font-family:"Lucida Sans", Sans-Serif;
+    font-size:40px;
+    font-style:italic;
+    color:black; 
+}
+#homePageTitle
+{
+    position:relative;
+    top:5%;
+}
+
+#hr1,#hr2
+{
+    background-color:#87CEFF;
+    width:400px;
+    height:5px;
+}
+#hr1
+{
+    position:relative;
+    top:80%;
+}
+#hr2
+{
+    
+    position:relative;
+    top:97%;
+}
+a:link
+{
+    color:#B452CD;
+}
+a:visited
+{
+    color:#8470FF;
+}
+.mainPage
+{
+    text-align:center;
+    font-family:Corbel;
+    font-size:14px;
+    color:black;
+}
+.table1
+{
+    width:100%;
+}
+.registrationPage
+{
+    position:relative;
+    padding:0px 13px;
+    bottom:20px;
+}
+.table2
+{
+    background-color:#EEEE00;
+    border:1.5px solid black;
+    padding:0px 0px 0px 0px;
+}
+.siteMapPathLeft
+{
+    background-color:#FFC125;
+}
+.errorMessage
+{
+    color:red;
+}
+.formBanner
+{
+    font-family:Arial;
+    font-size:16px;
+    font-style:italic;
+    text-align:center;
+    height:15px;
+}
+.formC1, .tdButton
+{
+    text-align:center;
+}
+.formC1
+{
+    width:18%;
+}
+.textbox
+{
+    width:90%;
+}
+.button1
+{
+    background-color:#BFEFFF;
+    width:150px;
+}
+.panel1
+{
+    font-family:Corbel;
+    color:#EE00EE;
+    position:relative;
+    bottom:25px;
+    left:2%;
+    text-align:center;
+}
+.adRotator1
+{
+    width:96px;
+    position:relative;
+    bottom:300px;
+    left:3%;
+}
+.adRotator2
+{
+    width:96px;
+    position:relative;
+    bottom:352px;
+    left:85%;
+}
+.aboutUsPage
+{
+    width:720px;
+    word-wrap: break-word;
+    font-family:Corbel;
+    font-size:18px;
+    position:relative;
+    left:20px;
+}
+.adImg
+{
+    position:relative;
+    top:7.3%;
+}
+.masterImg
+{
+    position:relative;
+    left:77.5%;
+}
+.addImg
+{
+    position:relative;
+    top:14.6%;
+}
+.searchImg
+{
+    position:relative;
+    top:7.3%;
+    left:39%;
+}
+.displayImg
+{
+    position:relative;
+    left:77.5%;
+}
+.aboutImg
+{
+    position:relative;
+    top:1.9%;
+    left:39%;
+}
+.sitemapImg
+{
+    position:relative;
+    top:26.3%;
+    left:39%;
+}
+.CSSImg
+{
+    position:relative;
+    top:30%;
+}
+.skinImg
+{
+    position:relative;
+    left:77.5%;
+    top:24%;
+}
+.loginImg
+{
+    position:relative;
+    left:36%;
+    top:23.5%;
+}
+.displayCodeHeader
+{
+    font-family:Arial;
+    color:black;
+}
+.codeHeader
+{
+    font-family:Arial;
+    color:blue;
+}
+.code
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size:12px;
+    border:1px solid Black;
+    background-color:#BFEFFF;
+    padding:10px;
+    margin:20px;
+}
+.displayLink
+{
+    position:relative;
+    left:16.7%;
+    top:17%;
+}
+.searchLink
+{
+    position:relative;
+    left:54%;
+    top:14%;
+}
+.customersGrid
+{
+    width:1024px;
+    font-size: 12px;
+}
+.customersHeader
+{
+    font-family: Arial;
+	font-size: 14px;
+	font-weight: bold; 
+	color: black; 
+	background-color: #BFEFFF; 
+	text-align: center;
+    width:50px;
+}
+.customersAlternate
+{
+    vertical-align:top;
+	background-color: #C6E2FF;
+}
+.customersRow
+{
+    vertical-align:top;
+}
+.displayCustLabel
+{
+	font-size: 14px;
+	width: 400px;
+}
+.customerItem
+{
+    padding:5px;
+}
+.table3
+{
+    background-color:#BFEFFF;
+    border:1.5px solid black;
+    padding:0px 0px 0px 0px;
+}
+.login
+{
+    background-color:#EEEE00;
+    border:1.5px solid black;
+    padding:0px 0px 0px 0px;
+}
+.loginText
+{
+    font-family: Arial;
+	font-size: 14px;
+	font-weight: bold; 
+}
+.loginForm
+{
+    position:relative;
+    left:30%;
+}
+
+.emailGrid
+{
+    width:470px;
+    font-family:Arial;
+    font-size:16px;
+    position:relative;
+    left:20%;
+}
+.emailPageTitle
+{
+    text-align:center;
+}
+.emailTable
+{
+    position:relative;
+    left:20%;
+}
+.emailHeader
+{
+    vertical-align:top;
+    text-align:right;
+	background-color: #C6E2FF;
+}
+.emailRow
+{
+    width:404px;
+}
+.messageIndicator
+{
+    text-align:center;
+    color:red;
+}
+.emailImg
+{
+    position:relative;
+    left:77.5%;
+}
+.eventMessage
+{
+    word-wrap: break-word;
+    color:blue;
+    position:relative;
+    left:5%;
+}

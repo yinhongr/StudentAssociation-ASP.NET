@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+    <Ad>
+    <ImageUrl>~/App_Data/pix/Xi'an.jpg</ImageUrl>
+    <NavigateUrl>http://www.dreamstime.com/royalty-free-stock-photos-miniature-terracotta-warriors-image2880728</NavigateUrl>
+    <AlternateText></AlternateText>
+    <Impressions>1</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/App_Data/pix/Beijing.jpg</ImageUrl>
+    <NavigateUrl>https://commons.wikimedia.org/wiki/Commons:Featured_picture_candidates/Log/November_2009</NavigateUrl>
+    <AlternateText>Tian'AnMen</AlternateText>
+    <Impressions>2</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/App_Data/pix/greatWall.jpg</ImageUrl>
+    <NavigateUrl>http://wallpaper.free-photograph.net/en/photobase/yp13887.html</NavigateUrl>
+    <AlternateText>greatWall</AlternateText>
+    <Impressions>3</Impressions>
+  </Ad>
+</Advertisements>

@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" %>
+<%@ Import Namespace="System.Data" %>
+<!DOCTYPE html>
+<script runat="server">
+    void dayRender(object sender, DayRenderEventArgs e)
+    {
+
+        eventDS.SelectCommand = "select * from event where EventDate = #" +
+                                e.Day.Date.ToShortDateString() + "#";
+        DataView dv = (DataView)eventDS.Select(DataSourceSelectArguments.Empty);
+        dv.Sort = "EventTime desc";
+        if (dv.Count > 0)
+        {
+            DataTable dt = dv.ToTable();
+            e.Cell.BackColor = System.Drawing.Color.Pink;
+
+            if (e.Day.Date == DateTime.Now.Date && !IsPostBack)
+            {
+                eventIndicator.Text = "";
+                for (int i = 0; i < dv.Count; i++)
+                {
+                    eventIndicator.Text += ">>" + dt.Rows[i][2] + " | " + dt.Rows[i][3] + "<br />";
+                }
+            }
+        }
+        if (eventIndicator.Text.Equals("") && !IsPostBack)
+        {
+            eventIndicator.Text = "No Events Scheduled for Today!";
+        }
+    }
+    void selectionChanged(Object sender, EventArgs e)
+    {
+        eventDS.SelectCommand = "select * from event where EventDate = #" +
+                                calendar.SelectedDate.ToShortDateString() + "#";
+        DataView dv = (DataView)eventDS.Select(DataSourceSelectArguments.Empty);
+        dv.Sort = "EventTime desc";
+        if (dv.Count > 0)
+        {
+            eventIndicator.Text = "";
+            DataTable dt = dv.ToTable();
+            for (int i = 0; i < dv.Count; i++)
+            {
+                eventIndicator.Text += ">>" + dt.Rows[i][2] + " | " + dt.Rows[i][3] + "<br />";
+            }
+        }
+        else
+        {
+            eventIndicator.Text = "No Events Scheduled for This Day!";
+        }  
+    }
+</script>
+
+<html>
+<head runat="server">
+    <title>China Sceneries</title>
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="masterTable">
+                <tr>
+                    <td class="border" colspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="banner1" colspan="1"></td>
+                    <td class="banner1" colspan="1">
+                        <asp:Image runat="server" CssClass="image1" ImageUrl="~/App_Data/pix/iconLeft.png" />
+                    </td>
+                    <td class="banner" colspan="1">Chinese Sceneries</td>
+                    <td class="banner1" colspan="1">
+                        <asp:Image runat="server" CssClass="image2" ImageUrl="~/App_Data/pix/iconRight.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border" colspan="5"></td>
+                </tr>
+                <tr>
+                    <td class="siteMapPathLeft" colspan="1"></td>
+                    <td class="breadcrumbs1" colspan="3">
+                        <asp:SiteMapPath SkinID="breadcrumbs" ID="SiteMapPath2" runat="server">
+                            <PathSeparatorTemplate>
+                                --> 
+                            </PathSeparatorTemplate>
+                        </asp:SiteMapPath>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pageLeft" colspan="1">
+                        <asp:Menu StaticDisplayLevels="2" ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" SkinID="MenuView">
+                        </asp:Menu>
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                        <asp:Image runat="server" CssClass="image3" ImageUrl="~/App_Data/pix/China_flag.png" />
+                        <asp:Calendar ID="calendar" SkinID="CalendarView" runat="server" OnDayRender="dayRender" OnSelectionChanged="selectionChanged"></asp:Calendar>
+                        <asp:Label ID="eventIndicator" runat="server" CssClass="eventMessage"></asp:Label>
+                    </td>
+                    <td class="pageContent" colspan="3">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="footer" colspan="4">&nbsp;&nbsp;&nbsp;Copyright 2015 Chinese Sceneries Agency, Pty Ltd
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <asp:accessdatasource runat="server"
+                DataFile="~/App_Data/event.accdb" 
+                id="eventDS" >
+        </asp:accessdatasource>
+    </form>
+</body>
+</html>
